@@ -1,0 +1,73 @@
+.background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../img/snoopydetail.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    height: 70%;
+}
+
+.img {
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    width: 50%;
+    height: 100%;
+}
+
+.infoContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.infoHeaders {
+    background-color: rgba(224, 175, 160, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.backBtn {
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.backBtn:hover {
+    background-color: rgba(224, 195, 187, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(110%);
+    transition: 0.125s;
+    width: 12rem;
+    height: 2.75rem;
+}

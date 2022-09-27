@@ -1,0 +1,197 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/snoopycreate.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 1700px 800px;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2rem;
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.25);
+    height: 70%;
+    width: 50%;
+}
+
+.formContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+    width: 50%;
+}
+
+.formInputs {
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 2rem;
+}
+
+.tempContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: 40%;
+}
+
+.tempsInput {
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    background-color: rgba(224, 175, 160, 0.8);
+    border-radius: 2rem;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    resize: none;
+    width: 95%;
+    height: 6rem;
+}
+
+.tempBtnContainer {
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tempBtn {
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 0.25rem;
+    width: 8rem;
+    height: 2rem;
+}
+
+.tempBtn:hover {
+    background-color: rgba(224, 195, 187, 0.8);
+    font-weight: 500;
+    transform: scale(110%);
+    transition: 0.125s;
+}
+
+.pageBtnContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 2.5rem;
+}
+
+.tempPageBtn {
+    background-color: rgba(224, 175, 160, 0.8);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.tempDisabledPageBtn {
+    background-color: rgba(224, 175, 160, 0.8);
+    border: none;
+    border-radius: 999px;
+    margin-left: 0.15rem;
+    margin-right: 0.15rem;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.tempPageBtn:hover {
+    background-color: rgba(224, 195, 187, 0.8);
+    transform: scale(110%);
+}
+
+.btnContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+}
+
+.btn {
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.btnDisabled {
+    background-color: rgba(128, 128, 128, 0.335);
+    border: none;
+    border-radius: 2rem;
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.btn:hover {
+    background-color: rgba(224, 195, 187, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(110%);
+    transition: 0.125s;
+    width: 12rem;
+    height: 2.75rem;
+}
+
+.textHasErrors {
+    color: red;
+    font-weight: 500;
+}
+
+.inputHasErrors {
+    border: none;
+    border-bottom: 1px solid red;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 1rem;
+    width: 25rem;
+    height: 2rem;
+}
+
+.tempsInputHasErrors {
+    border: 2px solid red;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    resize: none;
+    width: 95%;
+    height: 6rem;
+}

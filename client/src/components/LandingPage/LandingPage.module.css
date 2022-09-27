@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: aqua;
+}
+
+.enterBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(138, 158, 25);
+    width: 20rem;
+    height: 5rem;
+    background-image:url(../../img/snoopylanding.jpg);
+    background-position: center;
+    font-size: x-large;
+}
+
+.enterBtn:hover {
+    color: rgb(177, 202, 31);
+    font-size: xx-large;
+    transition: 0.25s;
+    width: 17rem;
+    height: 22rem;
+}

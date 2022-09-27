@@ -1,0 +1,32 @@
+.btn {
+    background-color: rgba(224, 175, 160, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+    width: 12rem;
+    height: 2.5rem;
+}
+
+.btn:hover {
+    background-color: rgba(224, 195, 187, 0.8);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(110%);
+    transition: 0.125s;
+    width: 12rem;
+    height: 2.75rem;
+}
+
+.lost {
+    font-size: 400%;
+    color: red
+}
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
