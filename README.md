@@ -1,15 +1,11 @@
-<<<<<<< HEAD
+
 Welcome to "Snoopy-Dogs App"
 
 This app will provide all what you need about dog breeds.
-=======
 
-Snoopy-Dogs-App
->>>>>>> a7ad9713446ba3a65c22170a1dfb08165c25d528
 
 ## How does it work?
 
-<<<<<<< HEAD
 Once you enter the app, you will see a landing page and a button that redirects you to home page. <br/>
 From there you will be able to search dog breeds by name using the search bar, sort by name, weight and/or filter by temperament, creation (API, DB). <br/>
 Once you make your choices, 8 different dog breeds will be display in card format per page and if you are interesed you can click their image to learn more details about it. <br/>
@@ -32,5 +28,3 @@ This app was coded with `JavaScript` and developed with:
 - [React JS](https://reactjs.org)
 - [Redux](https://redux.js.org)
 - [Styled-components](https://styled-components.com)
-=======
->>>>>>> a7ad9713446ba3a65c22170a1dfb08165c25d528
