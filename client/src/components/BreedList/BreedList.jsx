@@ -76,12 +76,16 @@ const BreedList = ({ filter }) => {
     };
 
     useEffect(() => {
-    filterFunction()
+    if (breeds.length > 0)filterFunction()
     }, [breeds, page, filter]);
 
     useEffect(() => {
     setPage(1);
     }, [filter]);
+
+    useEffect(() => {
+        console.log(breeds);
+        }, [breeds]);
 
     return (
     <div className={s.container}>
