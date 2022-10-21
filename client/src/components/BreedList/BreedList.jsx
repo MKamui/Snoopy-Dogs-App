@@ -12,14 +12,16 @@ const BreedList = ({ filter }) => {
     const { breeds } = useSelector((state) => state);
 
     const filterFunction = () => {
-    let filtBreeds = breeds.filter(
-        (breed) =>
+    let filtBreeds = []
+    if(breeds.length > 0) {
+        filtBreeds = breeds.filter(
+        (breed) => { return (
         breed.name.toUpperCase().includes(filter.name.toUpperCase()) &&
         breed.temperament
-            ?.join(", ")
-            .toUpperCase()
-            .includes(filter.temperament.toUpperCase())
-    );
+        ?.join(", ")
+                    .toUpperCase()
+                    .includes(filter.temperament.toUpperCase()))
+        })}
 
     if (filter.sortBy === "A_FIRST") {
         filtBreeds = filtBreeds.sort((a, b) =>
@@ -73,7 +75,9 @@ const BreedList = ({ filter }) => {
     setFilteredBreeds(filtBreeds.slice(page * 8 - 8, page * 8));
     };
 
-    useEffect(filterFunction, [breeds, page, filter]);
+    useEffect(() => {
+    filterFunction()
+    }, [breeds, page, filter]);
 
     useEffect(() => {
     setPage(1);
@@ -82,7 +86,7 @@ const BreedList = ({ filter }) => {
     return (
     <div className={s.container}>
         <div className={s.cardsContainer}>
-        {filteredBreeds.map((breed) => {
+        {filteredBreeds.length && filteredBreeds.map((breed) => {
             return <Card key={breed.id} breed={breed} />;
         })}
         </div>

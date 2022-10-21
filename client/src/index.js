@@ -1,3 +1,4 @@
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
@@ -8,7 +9,9 @@ import axios from "axios";
 import "normalize.css";
 import "./index.css";
 
-axios.defaults.baseURL = process.env.REACT_APP_API || "http://localhost:3001";
+require("dotenv").config();
+const { REACT_APP_API } = process.env;
+axios.defaults.baseURL = REACT_APP_API
 
 ReactDOM.render(
   <Provider store={store}>
