@@ -83,12 +83,10 @@ const BreedList = ({ filter }) => {
     setPage(1);
     }, [filter]);
 
-    useEffect(() => {
-        console.log(breeds);
-        }, [breeds]);
-
     return (
     <div className={s.container}>
+        {breeds.length !== 0 && 
+        <>        
         <div className={s.cardsContainer}>
         {filteredBreeds.length > 0 && filteredBreeds.map((breed) => {
             return <Card key={breed.id} breed={breed} />;
@@ -127,6 +125,8 @@ const BreedList = ({ filter }) => {
             {">>"}
         </button>
         </div>
+        </>
+        }
     </div>
     );
 };
