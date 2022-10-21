@@ -90,7 +90,7 @@ const BreedList = ({ filter }) => {
     return (
     <div className={s.container}>
         <div className={s.cardsContainer}>
-        {filteredBreeds.length && filteredBreeds.map((breed) => {
+        {filteredBreeds.length > 0 && filteredBreeds.map((breed) => {
             return <Card key={breed.id} breed={breed} />;
         })}
         </div>
